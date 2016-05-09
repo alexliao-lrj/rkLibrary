@@ -17,14 +17,15 @@ public class Book {
 	
 	public Book(){}
 	
-	public Book(int tid, String id, String name, int type, String isbn, 
-			int edition, String author, String publisher, float price, 
+	public Book(int tid, String id, String name, 
+			//int type, 
+			String isbn, int edition, String author, String publisher, float price, 
 			int page, String translator, String operator, String inTime){
 		super();
 		this.tid=tid;
 		this.id=id;
 		this.name=name;
-		this.type=type;
+		//this.type=type;
 		this.isbn=isbn;
 		this.edition=edition;
 		this.author=author;
