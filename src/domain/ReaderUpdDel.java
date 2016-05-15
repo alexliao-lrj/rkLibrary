@@ -2,9 +2,22 @@ package domain;
 
 import entity.Reader;
 
-public interface ReaderUpdDel {
+import dao.ReaderDao;
+
+public class ReaderUpdDel {
 	
-	public void DeleteReader(String readerid);
-	public void UpdateReader(Reader reader);
+	private ReaderDao readerdao = new ReaderDao();
+
+	public void DeleteReader(String readerid) {
+		// TODO Auto-generated method stub
+		readerdao.DeleteReader(readerid);
+
+	}
+
+	public void UpdateReader(Reader reader) {
+		// TODO Auto-generated method stub
+		readerdao.UpdateReader(reader);
+
+	}
 
 }

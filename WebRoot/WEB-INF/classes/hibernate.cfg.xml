@@ -20,7 +20,12 @@
 			com.mysql.jdbc.Driver
 		</property>
 		<property name="connection.password"></property>
-		<mapping resource="./AdminPo.hbm.xml" />
+		<property name="show_sql">true</property>
+
+		<mapping resource="entity/Reader.hbm.xml" />
+		<mapping resource="entity/Book.hbm.xml" />
+		<mapping resource="entity/Borrow.hbm.xml" />
+		<mapping resource="entity/Admin.hbm.xml" />
 
 	</session-factory>
 

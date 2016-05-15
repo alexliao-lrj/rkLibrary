@@ -1,7 +1,7 @@
 package entity;
 
 public class Reader {
-	public String ID; //reader id varchar(20)
+	public String rid; //reader id varchar(20)
 	public String pwd; //password varchar(30)
 	public String name; //reader name varchar(30)
 	public int number; //how many books can r borrow
@@ -9,35 +9,35 @@ public class Reader {
 	
 	public Reader(){}
 	
-	public String getReaderId(){
-		return this.ID;
+	public String getrid(){
+		return rid;
 	}
 	
-	public String getReaderPwd(){
-		return this.pwd;
+	public String getpwd(){
+		return pwd;
 	}
 	
-	public String getReaderName(){
-		return this.name;
+	public String getname(){
+		return name;
 	}
 	
-	public int getNumber(){
+	public int getnumber(){
 		return number;
 	}
 	
-	public void setReaderId(String id){
-		this.ID=id;
+	public void setrid(String id){
+		this.rid=id;
 	}
 	
-	public void setReaderPwd(String password){
+	public void setpwd(String password){
 		this.pwd=password;
 	}
 	
-	public void setReaderName(String name){
+	public void setname(String name){
 		this.name=name;
 	}
 	
-	public void setNumber(int num){
+	public void setnumber(int num){
 		this.number=num;
 	}
 	

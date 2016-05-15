@@ -1,7 +1,7 @@
 package entity;
 
 public class Borrow {
-	public int id;
+	public int boid;
 	public String bookid;
 	public String bookname;
 	public String readerid;
@@ -17,11 +17,11 @@ public class Borrow {
 		isback = isBack;
 	}
 	
-	public int getId() {
-		return id;
+	public int getboid() {
+		return boid;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setboid(int id) {
+		this.boid = id;
 	}
 	public String getBookid() {
 		return bookid;

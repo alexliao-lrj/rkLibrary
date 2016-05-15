@@ -25,17 +25,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <div style="height:643px;background-image: url('images/login_bkg.jpg');background-repeat: no-repeat;background-size:100% 100%">
 <div style="width: 60%;padding-left: 30%;padding-top: 15%">
   <h2>四川大学图书馆</h2>
-<form class="form-horizontal" action="loginaction.java" method="post">
+<form class="form-horizontal" action="/dbLibrary/servlet/loginaction" method="post">
   <div class="form-group">
     <label for="inputID3" class="col-sm-2 control-label">学号</label>
     <div class="col-sm-10">
-    <input type="text" class="form-control" id="inputID3" placeholder="学号">
+    <input type="text" class="form-control" id="inputID3" name="ID" placeholder="学号">
     </div>
   </div>
   <div class="form-group">
     <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
     <div class="col-sm-10">
-    <input type="password" class="form-control" id="inputPassword3" placeholder="密码">
+    <input type="password" class="form-control" id="inputPassword3" name="password" placeholder="密码">
     </div>
   </div>
   <div class="form-group">
@@ -61,3 +61,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <script src="js/bootstrap.js"></script>
   </body>
 </html>
+
+
+

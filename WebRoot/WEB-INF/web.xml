@@ -4,17 +4,135 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
 	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
-  <display-name></display-name>	
+
+  <display-name></display-name>
+  <servlet>
+    <servlet-name>loginaction</servlet-name>
+    <servlet-class>servlet.loginaction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>logoutAction</servlet-name>
+    <servlet-class>servlet.logoutAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>searchbookAction</servlet-name>
+    <servlet-class>servlet.searchbookAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>borrowbook</servlet-name>
+    <servlet-class>servlet.borrowbook</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>returnbook</servlet-name>
+    <servlet-class>servlet.returnbook</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>addbook</servlet-name>
+    <servlet-class>servlet.addbook</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>deletebook</servlet-name>
+    <servlet-class>servlet.deletebook</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>updatebook</servlet-name>
+    <servlet-class>servlet.updatebook</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>addreader</servlet-name>
+    <servlet-class>servlet.addreader</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>deletereader</servlet-name>
+    <servlet-class>servlet.deletereader</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>queryreader</servlet-name>
+    <servlet-class>servlet.queryreader</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>adminlogin</servlet-name>
+    <servlet-class>servlet.adminlogin</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>updatereader</servlet-name>
+    <servlet-class>servlet.updatereader</servlet-class>
+  </servlet>
+<servlet>
+    <servlet-name>book_searchaction</servlet-name>
+    <servlet-class>servlet.book_searchaction</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>loginaction</servlet-name>
+    <url-pattern>/servlet/loginaction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>logoutAction</servlet-name>
+    <url-pattern>/servlet/logoutAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>searchbookAction</servlet-name>
+    <url-pattern>/servlet/searchbookAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>borrowbook</servlet-name>
+    <url-pattern>/servlet/borrowbook</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>returnbook</servlet-name>
+    <url-pattern>/servlet/returnbook</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addbook</servlet-name>
+    <url-pattern>/servlet/addbook</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deletebook</servlet-name>
+    <url-pattern>/servlet/deletebook</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updatebook</servlet-name>
+    <url-pattern>/servlet/updatebook</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addreader</servlet-name>
+    <url-pattern>/servlet/addreader</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deletereader</servlet-name>
+    <url-pattern>/servlet/deletereader</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>queryreader</servlet-name>
+    <url-pattern>/servlet/queryreader</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>adminlogin</servlet-name>
+    <url-pattern>/servlet/adminlogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updatereader</servlet-name>
+    <url-pattern>/servlet/updatereader</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>book_searchaction</servlet-name>
+    <url-pattern>/servlet/book_searchaction</url-pattern>
+  </servlet-mapping>
+  	
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
-  <filter>
-  	<filter-name>struts2</filter-name>
-  	<filter-class>
-  		org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter
-  	</filter-class>
-  </filter>
-  <filter-mapping>
-  	<filter-name>struts2</filter-name>
-  	<url-pattern>*.action</url-pattern>
-  </filter-mapping></web-app>
+    
+  </web-app>

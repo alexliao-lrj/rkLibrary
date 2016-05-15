@@ -1,12 +1,40 @@
 package domain;
 
 import java.sql.SQLException;
+
 import entity.Book;
 
-public interface BookAddUpdDel {
+import dao.BookDao;
+import dao.BookDao;
+
+public class BookAddUpdDel {
 	
-	public void AddBook(Book book);
-	public void DeleteBook(String dellists) throws SQLException;
-	public void UpdateBook(Book book);
-	
+	BookDao bookdao = new BookDao();
+
+	public void AddBook(Book book) {
+		// TODO Auto-generated method stub
+		bookdao.AddBook(book);
+
+	}
+
+	public void DeleteBook(String dellists) throws SQLException {
+		// TODO Auto-generated method stub
+		String[] dellist = dellists.split(",");
+		String hql = "delete from Book where bid in (";
+		for(int i=0; i<dellist.length; i++){
+			if(i<dellist.length-1)
+				hql+="'"+dellist[i]+"',";
+			else
+				hql+="'"+dellist[i]+"')";
+		}
+		bookdao.DelBooks(hql);
+
+	}
+
+	public void UpdateBook(Book book) {
+		// TODO Auto-generated method stub
+		bookdao.UpdateBook(book);
+
+	}
+
 }

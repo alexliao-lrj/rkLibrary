@@ -1,9 +1,15 @@
 package domain;
 
 import entity.Reader;
+import dao.ReaderDao;
 
-public interface ReaderRegister {
+public class ReaderRegister {
 	
-	public void register(Reader reader); 
+	private ReaderDao readerdao = new ReaderDao();
+
+	public void register(Reader reader) {
+		// TODO Auto-generated method stub
+		readerdao.AddReader(reader);
+	}
 
 }
